@@ -1,8 +1,7 @@
 $(function () {
   let buttons = $(".saveBtn");
   buttons.on("click", function (event) {
-    let parent = $(event.target).parent();
-    alert("button clicked");
+    let parent = $(event.target).closest(".time-block");
     console.log(parent);
   });
   // TODO: Add a listener for click events on the save button. This code should
